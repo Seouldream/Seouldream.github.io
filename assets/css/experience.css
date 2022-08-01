@@ -1,0 +1,99 @@
+#experience {
+    padding: 24vw 4vw;
+}
+
+#experience .title {
+    border-bottom: 1vw solid #000;
+    color: var(--primary-color);
+}
+
+#experience .title h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 7.2vw;
+    font-weight: 700;
+    margin-bottom: 3.5vw;
+}
+
+#experience .title p {
+    font-size: 3.5vw;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 3.5vw;
+}
+
+#experience li {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-areas: 
+        "institution course"
+        "institution period";
+    padding: 8vw 4vw;
+    border-bottom: 1px dashed #DDD;
+}
+
+#experience li p {
+    font-size: 3.5vw;    
+}
+
+#experience .institution {
+    font-weight: 700;
+    grid-area: institution;
+    margin-right: 2vw;
+}
+
+#experience .course {
+    grid-area: course;
+    margin-bottom: 8vw;
+    color: #666;
+}
+
+#experience .period {
+    grid-area: period;
+    color: #666;
+}
+
+@media (min-width: 1024px) {
+    #experience {
+        padding: 8em calc((100% - (1280px)) / 2) 2.5em; 
+    }
+
+    #experience .title {
+        margin-bottom: 0;
+        border-bottom: 2px solid #000;
+    }
+
+    #experience .title h3 {
+        font-size: 2em;
+        display: inline-block;
+        margin-right: 1em;
+        margin-bottom: 0;
+    }
+    
+    #experience .title p {
+        font-size: 1.1em;
+        display: inline-block;
+    }
+
+    #experience li {
+        display: flex;
+        padding: 0;
+        height: 6.3em;
+    }
+    
+    #experience li p {
+        font-size: 1.1em;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    
+    #experience .institution {
+        margin: 0 1em;
+        width: 20%;
+    }
+    
+    #experience .course {
+        margin-bottom: 0;
+        width: 60%;
+    }
+}
